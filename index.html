@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Solar System with Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 2D / 3D Toggle Button -->
+  <div id="toggle-panel">
+    <label><input type="checkbox" id="toggle3D"> Enable 3D View</label>
+  </div>
+
+  <!-- Control Panel Start -->
+  <div id="control-panel">
+    <h2>Speed Controls</h2>
+    <label>Mercury: <input type="range" min="1" max="100" value="40" id="mercury-slider"></label>
+    <label>Venus:   <input type="range" min="1" max="100" value="30" id="venus-slider"></label>
+    <label>Earth:   <input type="range" min="1" max="100" value="20" id="earth-slider"></label>
+    <label>Mars:    <input type="range" min="1" max="100" value="18" id="mars-slider"></label>
+    <label>Jupiter: <input type="range" min="1" max="100" value="10" id="jupiter-slider"></label>
+    <label>Saturn:  <input type="range" min="1" max="100" value="8" id="saturn-slider"></label>
+    <label>Uranus:  <input type="range" min="1" max="100" value="6" id="uranus-slider"></label>
+    <label>Neptune: <input type="range" min="1" max="100" value="5" id="neptune-slider"></label>
+    <label>Pluto:   <input type="range" min="1" max="100" value="4" id="pluto-slider"></label>
+  </div>
+  <!-- Control Panel End -->
+
+  <!-- 2D Container -->
+  <div class="container">
+    <div class="sun">
+      <img src="./images/sun.png" alt="sun">
+    </div>
+    <div class="mercury"></div>
+    <div class="venus"></div>
+    <div class="earth">
+      <div class="moon"></div>
+    </div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+    <div class="pluto"></div>
+  </div>
+
+  <!-- Three.js & Main Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
